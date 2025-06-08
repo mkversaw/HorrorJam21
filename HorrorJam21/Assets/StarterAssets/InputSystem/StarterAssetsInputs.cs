@@ -20,6 +20,8 @@ namespace StarterAssets
 		public bool cursorLocked = true;
 		public bool cursorInputForLook = true;
 
+		public TerrainScanner terrainScanner;
+
 #if ENABLE_INPUT_SYSTEM
 		public void OnMove(InputValue value)
 		{
@@ -59,6 +61,7 @@ namespace StarterAssets
 		public void JumpInput(bool newJumpState)
 		{
 			jump = newJumpState;
+			terrainScanner.StartTerrainScan();
 		}
 
 		public void SprintInput(bool newSprintState)
