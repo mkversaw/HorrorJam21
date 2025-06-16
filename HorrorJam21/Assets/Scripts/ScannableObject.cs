@@ -44,7 +44,7 @@ public class ScannableObject : MonoBehaviour
 		if (defaultMat != null)
 		{
 			rend.material = defaultMat;
-			Debug.Log("Timer ended. Reverted to default material.");
+			//Debug.Log("Timer ended. Reverted to default material.");
 		}
 	}
 
